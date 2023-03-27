@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://naoxink.epizy.com/lajonda/0.3/cartas.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>cartas</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    @media print {
+      .card-block { page-break-after: always; }
+    }
+    @media screen {
+      .card-block { display: inline; }
+		  .tokens { margin: 2cm auto; }
+    }
+    #card-list, .tokens {
+      overflow: hidden;
+    }
+    .card-block { overflow: hidden; }
+    .card {
+      width: 6.3cm;
+      height: 8.8cm;
+      border: 1px solid black;
+      -webkit-border-radius: .3cm;
+      -moz-border-radius: .3cm;
+      -ms-border-radius: .3cm;
+      -o-border-radius: .3cm;
+      border-radius: .3cm;
+      text-align: center;
+      float: left;
+      margin: .1cm;
+      padding: 0 .1cm;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .card:before {
+      position: absolute;
+      content: 'La Jonda';
+      bottom: .1cm;
+      right: .2cm;
+      font-size: .4cm;
+      color: #AAA;
+    }
+    .card > p {
+      margin: .3cm 0;
+    }
+    .card > .title {
+      font-weight: bold;
+      font-size: .5cm;
+    }
+    .card > .description {
+      font-size: .4cm;
+      margin: .3cm;
+    }
+    .card > .type {
+      position: absolute;
+      top: .1cm;
+      left: .2cm;
+      font-size: .6cm;
+    }
+    .card > .extra {
+      position: absolute;
+      bottom: -.05cm;
+      left: .2cm;
+      font-size: .6cm;
+    }
+  	.token {
+  		padding: .2cm;
+  		border-radius: 100%;
+  		float: left;
+  		width: 3cm;
+  		border: 1px solid black;
+  		text-align: center;
+  		margin: .1cm;
+  	}
+  	.token .icon {
+  		font-size: 1.5cm;
+  	    margin-top: 0.3cm;
+  	}
+  	.token > p {
+  		margin: .1cm 0 .4cm 0;
+  	}
+  	.token.mb {
+  		padding: .5cm;
+  	}
+  	.token.mb > p {
+  		font-weight: bold;
+  	}
+    .remove-type {
+      cursor: pointer;
+      color: gray;
+    }
+    .remove-type:hover {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"><p>La jonda (cartas) <small>v0.3</small></p> <div id="add-card-form"><input type="text" id="add-card-title-input" placeholder="Título"> <input type="text" id="add-card-description-input" placeholder="Descripción"> <ul></ul> <select id="add-card-type-select"><option value="attack">Ataque</option> <option value="defense">Defensa</option> <option value="quick">Rápida</option> <option value="permanent">Permanente</option> <option value="no1v1">No 1v1</option></select> <input type="number" id="add-card-qty-input"> <button>Añadir</button></div> <div id="card-list"><div class="card"><p class="title">Hilando</p> <p class="description">Esta carta puede usarse después de que te ataquen con una carta (y ser afectado) y te permite lanzar una aunque no sea tu turno.</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">Hilando</p> <p class="description">Esta carta puede usarse después de que te ataquen con una carta (y ser afectado) y te permite lanzar una aunque no sea tu turno.</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">Gñs</p> <p class="description">El último que diga "Gñs" pierde un MEISIN.</p> <p class="type">⚔</p> <p class="extra">♴</p></div><div class="card"><p class="title">Gñs</p> <p class="description">El último que diga "Gñs" pierde un MEISIN.</p> <p class="type">⚔</p> <p class="extra">♴</p></div><div class="card"><p class="title">Gñs</p> <p class="description">El último que diga "Gñs" pierde un MEISIN.</p> <p class="type">⚔</p> <p class="extra">♴</p></div><div class="card"><p class="title">Pssssss</p> <p class="description">Ignora el efecto de cualquier carta de ataque (⚔) que te lancen directamente.</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">Pssssss</p> <p class="description">Ignora el efecto de cualquier carta de ataque (⚔) que te lancen directamente.</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">Pssssss</p> <p class="description">Ignora el efecto de cualquier carta de ataque (⚔) que te lancen directamente.</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">Jambre</p> <p class="description">Roba al jugador objetivo un MEISIN.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Jambre</p> <p class="description">Roba al jugador objetivo un MEISIN.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Jambre</p> <p class="description">Roba al jugador objetivo un MEISIN.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Jambre</p> <p class="description">Roba al jugador objetivo un MEISIN.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Broza</p> <p class="description">Elige una carta de otro jugador (sin verla) y quédatela.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Broza</p> <p class="description">Elige una carta de otro jugador (sin verla) y quédatela.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Broza</p> <p class="description">Elige una carta de otro jugador (sin verla) y quédatela.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Maigod</p> <p class="description">Causa el caos entre los jugadores (excepto tú) y todos se intercambian las cartas (Exceptuando las que están en uso ♾).</p> <p class="type">⚔</p> <p class="extra">♴</p></div><div class="card"><p class="title">Maigod</p> <p class="description">Causa el caos entre los jugadores (excepto tú) y todos se intercambian las cartas (Exceptuando las que están en uso ♾).</p> <p class="type">⚔</p> <p class="extra">♴</p></div><div class="card"><p class="title">El tema</p> <p class="description">Roba dos cartas del mazo o recupera un MEISIN al decir "Voy a ir moviendo el tema".</p> <p class="type">⛊</p> <p class="extra"></p></div><div class="card"><p class="title">El tema</p> <p class="description">Roba dos cartas del mazo o recupera un MEISIN al decir "Voy a ir moviendo el tema".</p> <p class="type">⛊</p> <p class="extra"></p></div><div class="card"><p class="title">El tema</p> <p class="description">Roba dos cartas del mazo o recupera un MEISIN al decir "Voy a ir moviendo el tema".</p> <p class="type">⛊</p> <p class="extra"></p></div><div class="card"><p class="title">--^--) Tiburón martillo</p> <p class="description">El --^--) golpea tan fuerte al jugador objetivo que pierde un MEISIN. Tira el dado y si sacas un 5 o más el --^--) vuelve y le da un golpe adicional perdiendo otro MEISIN.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">--^--) Tiburón martillo</p> <p class="description">El --^--) golpea tan fuerte al jugador objetivo que pierde un MEISIN. Tira el dado y si sacas un 5 o más el --^--) vuelve y le da un golpe adicional perdiendo otro MEISIN.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">--^--) Tiburón martillo</p> <p class="description">El --^--) golpea tan fuerte al jugador objetivo que pierde un MEISIN. Tira el dado y si sacas un 5 o más el --^--) vuelve y le da un golpe adicional perdiendo otro MEISIN.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">--^--) Tiburón martillo</p> <p class="description">El --^--) golpea tan fuerte al jugador objetivo que pierde un MEISIN. Tira el dado y si sacas un 5 o más el --^--) vuelve y le da un golpe adicional perdiendo otro MEISIN.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Isi</p> <p class="description">Refleja el efecto de la carta de ataque (⚔) al que te la ha lanzado.</p> <p class="type">⚡⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Isi</p> <p class="description">Refleja el efecto de la carta de ataque (⚔) al que te la ha lanzado.</p> <p class="type">⚡⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Isi</p> <p class="description">Refleja el efecto de la carta de ataque (⚔) al que te la ha lanzado.</p> <p class="type">⚡⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Fali</p> <p class="description">Al principio de tu turno puedes silenciar (⚇) o robar una carta a otro jugador (No puede ser el jugador que elegiste el turno anterior).</p> <p class="type">⚔♾</p> <p class="extra"></p></div><div class="card"><p class="title">Fali</p> <p class="description">Al principio de tu turno puedes silenciar (⚇) o robar una carta a otro jugador (No puede ser el jugador que elegiste el turno anterior).</p> <p class="type">⚔♾</p> <p class="extra"></p></div><div class="card"><p class="title">#EFFT Enough Fali For Today</p> <p class="description">Bloquea (🔒) al jugador con la carta de Fali en uso y hace que la descarte, si no está en uso bloquea (🔒) al jugador que saque en los dados el número más alto.</p> <p class="type">⛊</p> <p class="extra"></p></div><div class="card"><p class="title">#EFFT Enough Fali For Today</p> <p class="description">Bloquea (🔒) al jugador con la carta de Fali en uso y hace que la descarte, si no está en uso bloquea (🔒) al jugador que saque en los dados el número más alto.</p> <p class="type">⛊</p> <p class="extra"></p></div><div class="card"><p class="title">#EFFT Enough Fali For Today</p> <p class="description">Bloquea (🔒) al jugador con la carta de Fali en uso y hace que la descarte, si no está en uso bloquea (🔒) al jugador que saque en los dados el número más alto.</p> <p class="type">⛊</p> <p class="extra"></p></div><div class="card"><p class="title">#EFFT Enough Fali For Today</p> <p class="description">Bloquea (🔒) al jugador con la carta de Fali en uso y hace que la descarte, si no está en uso bloquea (🔒) al jugador que saque en los dados el número más alto.</p> <p class="type">⛊</p> <p class="extra"></p></div><div class="card"><p class="title">In da Jonda</p> <p class="description">Te hace invulnerable (⚛) durante toda la ronda.</p> <p class="type">⛊</p> <p class="extra"></p></div><div class="card"><p class="title">In da Jonda</p> <p class="description">Te hace invulnerable (⚛) durante toda la ronda.</p> <p class="type">⛊</p> <p class="extra"></p></div><div class="card"><p class="title">Jiome</p> <p class="description">Anula el efecto de la carta anterior.</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">Jiome</p> <p class="description">Anula el efecto de la carta anterior.</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">Jiome</p> <p class="description">Anula el efecto de la carta anterior.</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">Jiome</p> <p class="description">Anula el efecto de la carta anterior.</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">Jiome</p> <p class="description">Anula el efecto de la carta anterior.</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">El Regleta</p> <p class="description">Te conviertes en El Regleta y golpeas al último jugador que te atacó. Éste pierde dos MEISIN.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">El Regleta</p> <p class="description">Te conviertes en El Regleta y golpeas al último jugador que te atacó. Éste pierde dos MEISIN.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Perdonad los euros</p> <p class="description">Haces que todo el mundo se descarte de una carta (excepto tú).</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Perdonad los euros</p> <p class="description">Haces que todo el mundo se descarte de una carta (excepto tú).</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Perdonad los euros</p> <p class="description">Haces que todo el mundo se descarte de una carta (excepto tú).</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Nonononono</p> <p class="description">Silencia (⚇) al jugador objetivo.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Nonononono</p> <p class="description">Silencia (⚇) al jugador objetivo.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Finito de Córdoba</p> <p class="description">Coge todos los MEISINs de todos los jugadores y repártelos por igual. Los sobrantes se descartan.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Finito de Córdoba</p> <p class="description">Coge todos los MEISINs de todos los jugadores y repártelos por igual. Los sobrantes se descartan.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Un saludo o/</p> <p class="description">Tira el dado, si sacas el mismo número que jugadores activos ganas la partida, en cambio, si sacas un 1 abandonas la partida.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Un saludo o/</p> <p class="description">Tira el dado, si sacas el mismo número que jugadores activos ganas la partida, en cambio, si sacas un 1 abandonas la partida.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Chaquetero</p> <p class="description">Cambia tu mano de cartas por las de otro jugador.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Chaquetero</p> <p class="description">Cambia tu mano de cartas por las de otro jugador.</p> <p class="type">⚔</p> <p class="extra"></p></div><div class="card"><p class="title">Tópati</p> <p class="description">Envía el ataque que te acaban de lanzar a el jugador que elijas (excepto al atacante)</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">Tópati</p> <p class="description">Envía el ataque que te acaban de lanzar a el jugador que elijas (excepto al atacante)</p> <p class="type">⚡</p> <p class="extra"></p></div><div class="card"><p class="title">Tópati</p> <p class="description">Envía el ataque que te acaban de lanzar a el jugador que elijas (excepto al atacante)</p> <p class="type">⚡</p> <p class="extra"></p></div></div> <div class="card-block"></div></div>
+
+  <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+
+  <script>
+    const types = {
+      'attack': '⚔',
+      'defense': '⛊',
+      'quick': '⚡',
+      'no1v1': '♴',
+      'permanent': '♾'
+    }
+
+    const cards = [
+      {
+        'title': 'Hilando',
+        'description': 'Esta carta puede usarse después de que te ataquen con una carta (y ser afectado) y te permite lanzar una aunque no sea tu turno.',
+        'type': types.quick,
+        'qty': 2
+      },
+      {
+        'title': 'Gñs',
+        'description': 'El último que diga "Gñs" pierde un MEISIN.',
+        'type': types.attack,
+        'extra': types.no1v1,
+        'qty': 3
+      },
+      {
+        'title': 'Pssssss',
+        'description': 'Ignora el efecto de cualquier carta de ataque (⚔) que te lancen directamente.',
+        'type': types.quick,
+        'qty': 3
+      },
+      {
+        'title': 'Jambre',
+        'description': 'Roba al jugador objetivo un MEISIN.',
+        'type': types.attack,
+        'qty': 4
+      },
+      {
+        'title': 'Broza',
+        'description': 'Elige una carta de otro jugador (sin verla) y quédatela.',
+        'type': types.attack,
+        'qty': 3
+      },
+      {
+        'title': 'Maigod',
+        'description': 'Causa el caos entre los jugadores (excepto tú) y todos se intercambian las cartas (Exceptuando las que están en uso ♾).',
+        'type': types.attack,
+        'extra': types.no1v1,
+        'qty': 2
+      },
+      {
+        'title': 'El tema',
+        'description': 'Roba dos cartas del mazo o recupera un MEISIN al decir "Voy a ir moviendo el tema".',
+        'type': types.defense,
+        'qty': 3
+      },
+      {
+        'title': '--^--) Tiburón martillo',
+        'description': 'El --^--) golpea tan fuerte al jugador objetivo que pierde un MEISIN. Tira el dado y si sacas un 5 o más el --^--) vuelve y le da un golpe adicional perdiendo otro MEISIN.',
+        'type': types.attack,
+        'qty': 4
+      },
+      {
+        'title': 'Isi',
+        'description': 'Refleja el efecto de la carta de ataque (⚔) al que te la ha lanzado.',
+        'type': types.quick + types.attack,
+        'qty': 3
+      },
+      {
+        'title': 'Fali',
+        'description': 'Al principio de tu turno puedes silenciar (⚇) o robar una carta a otro jugador (No puede ser el jugador que elegiste el turno anterior).',
+        'type': types.attack + types.permanent,
+        'qty': 2
+      },
+      {
+        'title': '#EFFT Enough Fali For Today',
+        'description': 'Bloquea (🔒) al jugador con la carta de Fali en uso y hace que la descarte, si no está en uso bloquea (🔒) al jugador que saque en los dados el número más alto.',
+        'type': types.defense,
+        'qty': 4
+      },
+      {
+        'title': 'In da Jonda',
+        'description': 'Te hace invulnerable (⚛) durante toda la ronda.',
+        'type': types.defense,
+        'qty': 2
+      },
+      {
+        'title': 'Jiome',
+        'description': 'Anula el efecto de la carta anterior.',
+        'type': types.quick,
+        'qty': 5
+      },
+      {
+        'title': 'El Regleta',
+        'description': 'Te conviertes en El Regleta y golpeas al último jugador que te atacó. Éste pierde dos MEISIN.',
+        'type': types.attack,
+        'qty': 2
+      },
+      {
+        'title': 'Perdonad los euros',
+        'description': 'Haces que todo el mundo se descarte de una carta (excepto tú).',
+        'type': types.attack,
+        'qty': 3
+      },
+      {
+        'title': 'Nonononono',
+        'description': 'Silencia (⚇) al jugador objetivo.',
+        'type': types.attack,
+        'qty': 2
+      },
+      {
+        'title': 'Finito de Córdoba',
+        'description': 'Coge todos los MEISINs de todos los jugadores y repártelos por igual. Los sobrantes se descartan.',
+        'type': types.attack,
+        'qty': 2
+      },
+      {
+        'title': 'Un saludo o/',
+        'description': 'Tira el dado, si sacas el mismo número que jugadores activos ganas la partida, en cambio, si sacas un 1 abandonas la partida.',
+        'type': types.attack,
+        'qty': 2
+      },
+      {
+        'title': 'Chaquetero',
+        'description': 'Cambia tu mano de cartas por las de otro jugador.',
+        'type': types.attack,
+        'qty': 2
+      },
+      {
+        'title': 'Tópati',
+        'description': 'Envía el ataque que te acaban de lanzar a el jugador que elijas (excepto al atacante)',
+        'type': types.quick,
+        'qty': 3
+      }
+    ]
+
+    const app = new Vue({
+      'el': '#app',
+      'data': {
+        'version': '0.3',
+        'types': types,
+        'cards': cards,
+        'tmpCard': {
+          'title': '',
+          'description': '',
+          'types': [  ],
+          'typeKey': '',
+          'qty': 0
+        }
+      },
+      'methods': {
+        tmpCardAddType(){
+          this.tmpCard.types.push(this.tmpCard.typeKey)
+        },
+        addCard(){
+          const app = this
+          const tmpCard = this.tmpCard
+          this.cards.push({
+            'title': tmpCard.title,
+            'description': tmpCard.description,
+            'type': tmpCard.types.map(function(t){ return app.types[t] }).join(''),
+            'qty': tmpCard.qty >> 0
+          })
+          this.tmpCard.title = ''
+          this.tmpCard.description = ''
+          this.tmpCard.typeKey = ''
+          this.tmpCard.types = [  ]
+          this.tmpCard.qty = 0
+        },
+        tmpCardRemoveType(type){
+          this.tmpCard.types = this.tmpCard.types.filter(function(t){ return t !== type })
+        }
+      }
+    })
+  </script>
+</body></html>
