@@ -1,10 +1,10 @@
-# La Jonda: reglas
+# La Jonda: reglas
 
 ### Inicio
 Todos los jugadores deberán tener el número inicial de MEISINs y 5 cartas.
 Lo primero es sortear el título de "miniboss", para esto, todos los jugadores lanzan un dado y el que saque el número más cercano al 2 se le entregará el token de "Miniboss". Éste comenzará el juego y se seguirá el sentido del reloj.
 
-### 👤 El "Miniboss"
+### 👤 El "Miniboss"
 Será el encargado de decidir las reglas no escritas del juego.
 
 ### Los puntos "MEISIN"
@@ -25,7 +25,7 @@ Será el encargado de decidir las reglas no escritas del juego.
 - Al lanzar la carta "El tema" hay que decir voz alta: "Voy a ir moviendo el tema", si no, la carta queda descartada sin efecto.
 - Lo que no esté indicado en las cartas o en estas reglas lo decidirá el miniboss. El que no obedezca sufrirá su ira.
 
-### ¿Qué ocurre cuando se acaba el mazo de robo?
+### ¿Qué ocurre cuando se acaba el mazo de robo?
 Cuando un jugador vaya a robar y no quede ninguna carta disponible en el mazo de robo, TODOS los jugadores pierden un MEISIN.
 Después se baraja el mazo de cartas usadas y se vuelven a usar como mazo de robo.
 
