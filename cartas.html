@@ -13,6 +13,9 @@
       .card-block {
         page-break-after: always;
       }
+      .hidden-print {
+        display: none;
+      }
     }
 
     @media screen {
@@ -157,6 +160,15 @@
       <button @click="addCard">Añadir</button>
     </div>
 
+    <div class="hidden-print">
+      <p>Total de cartas: {{ totalCount() }}</p>
+      <p>Total de cartas de ataque {{ types.attack }}: {{ totalCount('attack') }}</p>
+      <p>Total de cartas de defensa {{ types.defense }}: {{ totalCount('defense') }}</p>
+      <p>Total de cartas rápidas {{ types.quick }}: {{ totalCount('quick') }}</p>
+      <p>Total de cartas permanentes {{ types.permanent }}: {{ totalCount('permanent') }}</p>
+      <p>Total de cartas no1v1 {{ types.no1v1 }}: {{ totalCount('no1v1') }}</p>
+    </div>
+    
     <div id="card-list">
       <template v-for="card in cards">
         <div class="card" v-for="n in card.qty">
@@ -428,6 +440,13 @@
         }
       },
       'methods': {
+        totalCount(type) {
+          return this.cards.reduce((acc, c) => {
+            if (!type) acc += c.qty
+            else if (c.type.includes(this.types[type]) || (c.extra && c.extra.includes(this.types[type]))) acc += c.qty
+            return acc
+          }, 0)
+        },
         tmpCardAddType() {
           this.tmpCard.types.push(this.tmpCard.typeKey)
         },
