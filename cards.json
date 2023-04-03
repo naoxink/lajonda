@@ -1,0 +1,156 @@
+[
+  {
+    "title": "Hilando",
+    "description": "Esta carta puede usarse después de que te ataquen con una carta (y ser afectado) y te permite lanzar una aunque no sea tu turno.",
+    "type": [ "quick" ],
+    "qty": 2
+  },
+  {
+    "title": "Gñs",
+    "description": "El último que diga 'Gñs' pierde un MEISIN.",
+    "type": [ "attack" ],
+    "extra": [ "no1v1" ],
+    "qty": 3
+  },
+  {
+    "title": "Pssssss",
+    "description": "Ignora el efecto de cualquier carta de ataque (⚔) que te lancen directamente.",
+    "type": [ "quick" ],
+    "qty": 3
+  },
+  {
+    "title": "Jambre",
+    "description": "Roba al jugador objetivo un MEISIN.",
+    "type": [ "attack" ],
+    "qty": 4
+  },
+  {
+    "title": "Broza",
+    "description": "Elige una carta de otro jugador (sin verla) y quédatela.",
+    "type": [ "attack" ],
+    "qty": 3
+  },
+  {
+    "title": "Maigod",
+    "description": "Causa el caos entre los jugadores (excepto tú) y todos se intercambian las cartas (Exceptuando las que están en uso ♾).",
+    "type": [ "attack" ],
+    "extra": [ "no1v1" ],
+    "qty": 2
+  },
+  {
+    "title": "El tema",
+    "description": "Roba dos cartas del mazo o recupera un MEISIN al decir \"Voy a ir moviendo el tema\".",
+    "type": [ "defense" ],
+    "qty": 3
+  },
+  {
+    "title": "--^--) Tiburón martillo",
+    "description": "El --^--) golpea tan fuerte al jugador objetivo que pierde un MEISIN. Tira el dado y si sacas un 5 o más el --^--) vuelve y le da un golpe adicional perdiendo otro MEISIN.",
+    "type": [ "attack" ],
+    "qty": 4
+  },
+  {
+    "title": "Isi",
+    "description": "Refleja el efecto de la carta de ataque (⚔) al que te la ha lanzado.",
+    "type": [ "quick", "attack" ],
+    "qty": 3
+  },
+  {
+    "title": "Fali",
+    "description": "Al principio de tu turno puedes silenciar (⚇) o robar una carta a otro jugador (No puede ser el jugador que elegiste el turno anterior).",
+    "type": [ "attack", "permament" ],
+    "qty": 2
+  },
+  {
+    "title": "#EFFT Enough Fali For Today",
+    "description": "Bloquea (🔒) al jugador con la carta de Fali en uso y hace que la descarte, si no está en uso bloquea (🔒) al jugador que saque en los dados el número más alto.",
+    "type": [ "defense" ],
+    "qty": 4
+  },
+  {
+    "title": "In da Jonda",
+    "description": "Te hace invulnerable (⚛) durante toda la ronda.",
+    "type": [ "defense" ],
+    "qty": 2
+  },
+  {
+    "title": "Jiome",
+    "description": "Anula el efecto de la carta anterior.",
+    "type": [ "quick" ],
+    "qty": 5
+  },
+  {
+    "title": "El Regleta",
+    "description": "Te conviertes en El Regleta y golpeas al último jugador que te atacó. Éste pierde dos MEISIN.",
+    "type": [ "attack" ],
+    "qty": 2
+  },
+  {
+    "title": "Perdonad los euros",
+    "description": "Haces que todo el mundo se descarte de una carta (excepto tú).",
+    "type": [ "attack" ],
+    "qty": 3
+  },
+  {
+    "title": "Nonononono",
+    "description": "Silencia (⚇) al jugador objetivo.",
+    "type": [ "attack" ],
+    "qty": 2
+  },
+  {
+    "title": "Finito de Córdoba",
+    "description": "Coge todos los MEISINs de todos los jugadores y repártelos por igual. Los sobrantes se descartan.",
+    "type": [ "attack" ],
+    "qty": 2
+  },
+  {
+    "title": "Un saludo o/",
+    "description": "Tira el dado, si sacas el mismo número que jugadores activos ganas la partida, en cambio, si sacas un 1 abandonas la partida.",
+    "type": [ "attack" ],
+    "qty": 2
+  },
+  {
+    "title": "Chaquetero",
+    "description": "Cambia tu mano de cartas por las de otro jugador.",
+    "type": [ "attack" ],
+    "qty": 2
+  },
+  {
+    "title": "Tópati",
+    "description": "Envía el ataque que te acaban de lanzar a el jugador que elijas (excepto al atacante)",
+    "type": [ "quick" ],
+    "extra": [ "no1v1" ],
+    "qty": 3
+  },
+  {
+    "title": "Poooooo",
+    "description": "Puedes jugar esta carta cuando un jugador se defiende de un ataque. El atacante queda bloqueado.",
+    "type": [ "quick" ],
+    "extra": [ "no1v1" ],
+    "qty": 3
+  },
+  {
+    "title": "Visualizarse",
+    "description": "Mientras esté activo puedes tener en tu mano hasta siete cartas",
+    "type": [ "defense", "permament" ],
+    "qty": 2
+  },
+  {
+    "title": "Tranquilizaos",
+    "description": "Todas las cartas permanentes activas (excepto Fali) tienen que descartarse",
+    "type": [ "attack" ],
+    "qty": 3
+  },
+  {
+    "title": "Cafelito",
+    "description": "Te vas de cafelito. Nadie puede atacarte ni aplicarte ningún estado. Puedes elegir si te llevas a otro jugador o vas solo.",
+    "type": [ "defense" ],
+    "qty": 3
+  },
+  {
+    "title": "(╯°□°）╯︵ ┻━┻",
+    "description": "Todo el mundo debe descartar todas sus cartas de su mano y robar dos nuevas",
+    "type": [ "attack" ],
+    "qty": 2
+  }
+]
