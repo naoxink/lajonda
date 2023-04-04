@@ -140,9 +140,9 @@
 
 <body>
   <div id="app">
-    <p>La jonda (cartas) <small>v{{ version }}</small></p>
 
     <div id="add-card-form" class="hidden-print">
+      <p>La jonda (cartas) <small>v{{ version }}</small></p>
       <input type="text" id="add-card-title-input" placeholder="Título" v-model="tmpCard.title">
       <input type="text" id="add-card-description-input" placeholder="Descripción" v-model="tmpCard.description">
       <ul v-if="tmpCard && tmpCard.types">
