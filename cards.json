@@ -58,7 +58,7 @@
   {
     "title": "Fali",
     "description": "Al principio de tu turno puedes silenciar (⚇) o robar una carta a otro jugador (No puede ser el jugador que elegiste el turno anterior).",
-    "type": [ "attack", "permament" ],
+    "type": [ "attack", "permanent" ],
     "qty": 2
   },
   {
@@ -132,7 +132,7 @@
   {
     "title": "Visualizarse",
     "description": "Mientras esté activo puedes tener en tu mano hasta siete cartas",
-    "type": [ "defense", "permament" ],
+    "type": [ "defense", "permanent" ],
     "qty": 2
   },
   {
