@@ -478,6 +478,9 @@
         tmpCardRemoveType(type) {
           this.tmpCard.types = this.tmpCard.types.filter(function (t) { return t !== type })
         }
+      },
+      mounted(){
+        this.getCards()
       }
     })
   </script>
