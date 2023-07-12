@@ -433,7 +433,7 @@
       'data': {
         'version': '0.5',
         'types': types,
-        'cards': cards,
+        'cards': [],
         'tmpCard': {
           'title': '',
           'description': '',
@@ -443,6 +443,13 @@
         }
       },
       'methods': {
+        async getCards(){
+          const res = await fetch('cards.json')
+          const json = await res.json()
+          if(json){
+            this.cards = json
+          }
+        },
         totalCount(type) {
           return this.cards.reduce((acc, c) => {
             if (!type) acc += c.qty
